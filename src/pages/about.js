@@ -5,7 +5,7 @@ const About = () => {
 
   return (
     
-      <section className="p-10 m-8 mt-[150px] mx-[120px]">
+      <section className="p-10 m-8 mt-[150px] mx-[120px] border-t border-gray-300">
         <h2 className="text-white uppercase font-bold mb-10 text-xl"><span className="text-transparent bg-clip-text bg-gradient-to-r from-[#FF512F] via-[#F09819] to-[#FF512F] font-extrabold">Acerca</span> de Mi</h2>
         <span className="text-white">imagen</span>
         <article className="text-white container">

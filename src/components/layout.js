@@ -11,10 +11,7 @@ const Layout = ({children , title, description}) => {
         <meta name="description" content={description} />
     </Head>
     <Navbar />
-
     {children}
-
-
     <Footer />
     </>
   )

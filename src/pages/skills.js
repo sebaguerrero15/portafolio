@@ -11,13 +11,11 @@ import { FaReact } from "@react-icons/all-files/fa/FaReact";
 
 const Skills = () => {
 
-  
-
   return (
-    <Layout>
+    <>
       <section className=" text-white">
         <h3 className="font-bold mt-[50px] mx-[180px] mb-5 uppercase text-[30px]">
-          Habilidades<span className="text-transparent bg-clip-text bg-gradient-to-r from-[#FF512F] via-[#F09819] to-[#FF512F] font-extrabold"> Técnicas</span> 🚀
+          Habilidades<span className="text-transparent bg-clip-text bg-gradient-to-r from-[#FF512F] via-[#F09819] to-[#FF512F] font-extrabold">Técnicas</span> 🚀
         </h3>
         <div className="grid grid-cols-4 gap-2 text-[50px] bg-[#1E293B] rounded-lg mx-[280px] p-4 place-items-center">
           <span className="text-[#F16524]">
@@ -109,8 +107,7 @@ const Skills = () => {
         </p>
       </section>
 
-      </Layout>
-  
+  </>
   );
 };
 

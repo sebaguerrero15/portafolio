@@ -1,5 +1,6 @@
 import Link from "next/link";
 import Image from "next/image";
+import {useState, useEffect, useRef} from "react"
 import { CgUserlane } from "@react-icons/all-files/cg/CgUserlane";
 import { BiTask } from "@react-icons/all-files/bi/BiTask";
 import { AiFillHome } from "@react-icons/all-files/ai/AiFillHome";
@@ -8,15 +9,29 @@ import { AiFillThunderbolt } from "@react-icons/all-files/ai/AiFillThunderbolt";
 
 
 
+
+
 const Navbar = () => {
- 
-  
+
+  const etiquetaRef = useRef(null)
+  const [isActive, setIsActive] = useState(false)
+
+const scrollToEtiqueta = () => {
+  etiquetaRef.current.scrollIntoView({ behavior: 'smooth' });
+};
+
+
+useEffect(() => {
+  window.addEventListener('scroll', () => {
+    window.scrollY > 60 ? setIsActive(true) : setIsActive(false)
+  })
+}, [])
 
   return (
 
     <header>
     <nav>
-      <div className="flex justify-between px-4 sm:px-6 lg:px-8 mt-5">
+      <div className={`${isActive ? "bg-white py-4 shadow-md" : "bg-none py-4"} flex justify-between px-4 fixed items-center w-full transition-all z-10 top-0`}>
         <div>
         <Link href="/">
             <Image src="/img/logo.png" 
@@ -28,13 +43,13 @@ const Navbar = () => {
             </div>
             <div className="flex space-x-8 text-md">
 
-              <Link href="/" className="text-[#FC7903] font-bold flex gap-2 items-center hover:bg-[#292929] hover:rounded-md p-2">
+              <Link href="/"  className="text-[#FC7903] font-bold flex gap-2 items-center hover:bg-[#292929] hover:rounded-md p-2">
                 INICIO <AiFillHome />
                 </Link>
 
-              <Link href="/proyectos" className="text-[#FC7903] font-bold flex gap-2 items-center hover:bg-[#292929] hover:rounded-md p-2">
+              <button onClick={scrollToEtiqueta} className="text-[#FC7903] font-bold flex gap-2 items-center hover:bg-[#292929] hover:rounded-md p-2">
                 PROYECTOS <BiTask />
-                </Link>
+                </button>
               
               <Link 
                href="/about"

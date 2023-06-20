@@ -1,5 +1,8 @@
 import Layout from "@/components/layout";
 import About from "./about";
+import Skills from "./skills";
+import Proyectos from "./proyectos";
+import Contacto from "./contacto"
 
 
 
@@ -15,7 +18,7 @@ export default function Home() {
       >
         
 
-        <main className="container m-11 mt-[70px] mb-[250px]">
+        <main className=" h-screen w-full mt-[100px]">
           <section>
             <h1 className=" text-[80px] ml-[200px] font-extrabold text-transparent bg-clip-text bg-gradient-to-r from-[#FF512F] via-[#F09819] to-[#FF512F]">Hola!</h1>
 
@@ -25,8 +28,10 @@ export default function Home() {
             <p className="text-2xl font-light text-white ml-[190px]">Desarollador Web Front-End 😎</p>
           </section>
         </main>
-
         <About />
+        <Skills />
+        <Proyectos />
+        <Contacto />
 
       </Layout>
     </>
