@@ -1,4 +1,3 @@
-import Layout from "@/components/layout";
 import { AiFillHtml5 } from "@react-icons/all-files/ai/AiFillHtml5";
 import { DiCss3 } from "@react-icons/all-files/di/DiCss3";
 import { SiJavascript } from "@react-icons/all-files/si/SiJavascript";
@@ -12,10 +11,10 @@ import { FaReact } from "@react-icons/all-files/fa/FaReact";
 const Skills = () => {
 
   return (
-    <>
-      <section className=" text-white">
-        <h3 className="font-bold mt-[50px] mx-[180px] mb-5 uppercase text-[30px]">
-          Habilidades<span className="text-transparent bg-clip-text bg-gradient-to-r from-[#FF512F] via-[#F09819] to-[#FF512F] font-extrabold">Técnicas</span> 🚀
+    <section id="skills">
+      <div className="text-white">
+        <h3 className="font-bold mt-[50px] text-center mb-5 uppercase text-[30px]">
+          Habilidades<span className="text-transparent bg-clip-text bg-gradient-to-r from-[#FF512F] via-[#F09819] to-[#FF512F] font-extrabold"> Técnicas</span> 🚀
         </h3>
         <div className="grid grid-cols-4 gap-2 text-[50px] bg-[#1E293B] rounded-lg mx-[280px] p-4 place-items-center">
           <span className="text-[#F16524]">
@@ -74,14 +73,12 @@ const Skills = () => {
           </div>
 
         </div>
-      </section>
+      </div>
 
-      <hr className="mt-10"/>
-
-      <h3 className="text-white mx-[180px] font-bold mt-[50px] mb-5 uppercase text-[30px]">
-          Habilidades<span className="text-transparent bg-clip-text bg-gradient-to-r from-[#FF512F] via-[#F09819] to-[#FF512F] font-extrabold"> Blandas</span> 🐱‍🏍
+      <h3 className="text-white text-center font-bold mt-[50px] mb-5 uppercase text-[30px]">
+          Habilidades<span className="text-transparent bg-clip-text bg-gradient-to-r from-[#FF512F] via-[#F09819] to-[#FF512F] font-extrabold"> Blandas</span>
         </h3>
-      <section className="text-white m-10 mx-[180px] text-md bg-[#1E293B] rounded-lg p-7 mb-[100px]">
+      <div className="text-white m-10 mx-[180px] text-md bg-[#1E293B] rounded-lg p-7 mb-[100px]">
         <p>
           <span className="font-bold text-md">Comunicacion efectiva:</span> Tengo la capacidad
           de comunicarme de manera efectiva con compañeros de trabajo, clientes
@@ -105,9 +102,9 @@ const Skills = () => {
           <span className="font-bold text-md">Adaptabilidad:</span> Me adapto a los cambios en el 
           entorno de trabajo, tengo la disposición de aprender de forma rápida y efectiva.
         </p>
-      </section>
+      </div>
 
-  </>
+  </section>
   );
 };
 

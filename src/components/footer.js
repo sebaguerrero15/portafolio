@@ -6,7 +6,7 @@ import { AiOutlineInstagram } from "@react-icons/all-files/ai/AiOutlineInstagram
 
 const Footer = () => {
   return (
-    <footer className="flex-shrink-0 bg-[#292929] py-8 items-center">
+    <footer className="flex-shrink-0 bg-black py-8 items-center">
       <div className="container mx-auto text-center grid grid-cols-3">
         <nav className="text-[#FC7903] font-bold grid justify-center mt-5 text-sm">
           <Link

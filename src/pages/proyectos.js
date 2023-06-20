@@ -34,13 +34,9 @@ const Proyectos = () => {
   ];
 
   return (
-    // <Layout 
-    // title={'Proyectos'}
-    // description={'Proyectos Front-end Realizados'}
-    // >
        
   <section className="container m-auto mt-10">
-    <h2 className="text-white uppercase font-bold mb-10 text-lg">Mis proyectos <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#FF512F] via-[#F09819] to-[#FF512F] font-extrabold">Realizados</span></h2>
+    <h2 id="proyectos" className="text-white uppercase font-bold mb-10 text-[30px] text-center">Mis proyectos <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#FF512F] via-[#F09819] to-[#FF512F] font-extrabold">Realizados</span></h2>
     <ul className="grid grid-cols-2 text-white">
       {trabajos.map((trabajo) => (
         <li key={trabajo.id} className="bg-[#1E293B] m-auto h-[580px] w-[600px] rounded-md mb-11">
