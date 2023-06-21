@@ -1,3 +1,4 @@
+import Image from "next/image";
 import { AiFillHtml5 } from "@react-icons/all-files/ai/AiFillHtml5";
 import { DiCss3 } from "@react-icons/all-files/di/DiCss3";
 import { SiJavascript } from "@react-icons/all-files/si/SiJavascript";
@@ -6,7 +7,10 @@ import { SiTypescript } from "@react-icons/all-files/si/SiTypescript";
 import { FaGitAlt } from "@react-icons/all-files/fa/FaGitAlt";
 import { FaNodeJs } from "@react-icons/all-files/fa/FaNodeJs";
 import { FaReact } from "@react-icons/all-files/fa/FaReact";
-
+import { SiMongodb } from "@react-icons/all-files/si/SiMongodb";
+import { AiFillGithub } from "@react-icons/all-files/ai/AiFillGithub";
+import { FaWordpress } from "@react-icons/all-files/fa/FaWordpress";
+import logoNext from "../../public/img/logonext.png"
 
 const Skills = () => {
 
@@ -41,12 +45,25 @@ const Skills = () => {
           <span className="text-[#6DA75D]">
             <FaNodeJs />
           </span>
+          <span className="text-[#00EA63]">
+            <SiMongodb />
+          </span>
+          <span className="text-[#6DA75D]">
+            <Image src={logoNext} alt="logo-nextjs" width={50} height={50} />
+          </span>
+          <span className="text-[#007298]">
+            <FaWordpress />
+          </span>
+          <span className="text-black">
+            <AiFillGithub />
+          </span>
+          
         </div>
 
         <div className="grid grid-cols-3 mx-[420px]">
           <div className="mt-5">
-            <p className="text-xl font-extrabold">Lenguajes</p>
-            <ol className="font-light p-3">
+            <p className="text-2xl font-extrabold">Lenguajes</p>
+            <ol className="font-light p-3 text-xl">
               <li>HTML5</li>
               <li>CSS3</li>
               <li>JavaScript</li>
@@ -56,19 +73,20 @@ const Skills = () => {
           </div>
 
           <div className="mt-5">
-            <p className="text-xl font-extrabold">Frameworks</p>
-            <ol className="font-light p-3">
-              <li>React:</li>
-              <li>NodeJS:</li>
+            <p className="text-2xl font-extrabold">Frameworks</p>
+            <ol className="font-light p-3 text-xl">
+              <li>React</li>
+              <li>NodeJS</li>
               <li>NextJS</li>
-              <li>TailwindCSS:</li>
+              <li>TailwindCSS</li>
             </ol>
           </div>
 
           <div className="mt-5">
-            <p className="text-xl font-extrabold">Otros</p>
-            <ol className="font-light p-3">
-              <li>Git / Github:</li>
+            <p className="text-2xl font-extrabold">Otros</p>
+            <ol className="font-light p-3 text-xl">
+              <li>Git / Github</li>
+              <li>WordPress</li>
             </ol>
           </div>
 
@@ -78,7 +96,7 @@ const Skills = () => {
       <h3 className="text-white text-center font-bold mt-[50px] mb-5 uppercase text-[30px]">
           Habilidades<span className="text-transparent bg-clip-text bg-gradient-to-r from-[#FF512F] via-[#F09819] to-[#FF512F] font-extrabold"> Blandas</span>
         </h3>
-      <div className="text-white m-10 mx-[180px] text-md bg-[#1E293B] rounded-lg p-7 mb-[100px]">
+      <div className="text-white m-10 mx-[180px] text-md bg-[#1E293B] rounded-lg p-7 mb-[100px] text-xl">
         <p>
           <span className="font-bold text-md">Comunicacion efectiva:</span> Tengo la capacidad
           de comunicarme de manera efectiva con compañeros de trabajo, clientes

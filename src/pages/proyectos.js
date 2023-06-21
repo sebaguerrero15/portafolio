@@ -12,10 +12,11 @@ const Proyectos = () => {
     },
     {
       id: 2,
-      titulo: "Proyecto 2",
-      description: "Descripción del proyecto 2.",
-      imagen: "/proyecto2.jpg",
-      link: "https://www.ejemplo.com/proyecto2",
+      titulo: "El Perchero",
+      description: "Tienda de ropa y accesorios para Hombres y Mujeres",
+      tecnologias: "Vite",
+      imagen: "/img/elperchero.png",
+      link: "https://el-perchero.vercel.app/",
     },
     {
       id: 3,
@@ -40,11 +41,15 @@ const Proyectos = () => {
     <ul className="grid grid-cols-2 text-white">
       {trabajos.map((trabajo) => (
         <li key={trabajo.id} className="bg-[#1E293B] m-auto h-[580px] w-[600px] rounded-md mb-11">
-          <h3 className="m-5 text-extrabold">{trabajo.titulo}</h3>
+          <h3 className="m-5 text-extrabold text-center font-bold text-lg">{trabajo.titulo}</h3>
           <Image src={trabajo.imagen} alt={trabajo.titulo} width={570} height={370} className="m-auto rounded-lg"/>
           <p className="mt-3 ml-5 text-lg">{trabajo.description}</p>
           <a href={trabajo.link} target="_blank" rel="noopener noreferrer" className="uppercase text-lg font-extrabold ml-5 text-transparent bg-clip-text bg-gradient-to-r from-[#FF512F] via-[#F09819] to-[#FF512F]">
             Ver Demo
+          </a>
+          <br />
+          <a href={trabajo.link} target="_blank" rel="noopener noreferrer" className="uppercase text-lg font-extrabold text-transparent text-white p-1 border-2 rounded-md">
+            Ver Código
           </a>
         </li>
       ))}

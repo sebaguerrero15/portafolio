@@ -30,7 +30,7 @@ useEffect(() => {
                 </Link>
                 </li>
                 <li>
-              <Scroll activeClass="active" to="about" smooth={true} duration={1500} offset={-100} className="text-[#FC7903] font-bold flex gap-2 items-center hover:bg-[#292929] cursor-pointer hover:rounded-md p-2">
+              <Scroll activeClass="active" to="about" smooth={true} duration={1500} offset={-30} className="text-[#FC7903] font-bold flex gap-2 items-center hover:bg-[#292929] cursor-pointer hover:rounded-md p-2">
                 ACERCA DE MI <CgUserlane />
               </Scroll>
               </li>
