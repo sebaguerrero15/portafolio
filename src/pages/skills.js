@@ -20,47 +20,24 @@ const Skills = () => {
         <h3 className="font-bold mt-[50px] text-center mb-5 uppercase text-[30px]">
           Habilidades<span className="text-transparent bg-clip-text bg-gradient-to-r from-[#FF512F] via-[#F09819] to-[#FF512F] font-extrabold"> Técnicas</span> 🚀
         </h3>
-        <div className="grid grid-cols-4 gap-2 text-[50px] bg-[#1E293B] rounded-lg mx-[280px] p-4 place-items-center">
-          <span className="text-[#F16524]">
-            <AiFillHtml5 />
-          </span>
-          <span className="text-[#01B5F2]">
-            <DiCss3 />
-          </span>
-          <span className="text-[#F7E018]">
-            <SiJavascript />
-          </span>
-          <span className="text-black">
-            <FaReact />
-          </span>
-          <span className="text-[#38BDF8]">
-            <SiTailwindcss />
-          </span>
-          <span className="text-[#2D79C7]">
-            <SiTypescript />
-          </span>
-          <span className="text-[#F05033]">
-            <FaGitAlt />
-          </span>
-          <span className="text-[#6DA75D]">
-            <FaNodeJs />
-          </span>
-          <span className="text-[#00EA63]">
-            <SiMongodb />
-          </span>
-          <span className="text-[#6DA75D]">
-            <Image src={logoNext} alt="logo-nextjs" width={50} height={50} />
-          </span>
-          <span className="text-[#007298]">
-            <FaWordpress />
-          </span>
-          <span className="text-black">
-            <AiFillGithub />
-          </span>
-          
+        <div className="mx-[300px] mt-[30px] text-[50px] bg-[#1E293B] rounded-lg p-4 ">
+          <div className="grid grid-cols-4 gap-4 justify-items-center sm:mx-[10px]">
+            <AiFillHtml5 className="text-[#F16524]"/>
+            <DiCss3 className="text-[#01B5F2]"/>
+            <SiJavascript className="text-[#F7E018]" />
+            <FaReact className="text-black" />
+            <SiTailwindcss className="text-[#38BDF8]"/>
+            <SiTypescript className="text-[#2D79C7]"/>
+            <FaGitAlt className="text-[#F05033]"/>
+            <FaNodeJs className="text-[#6DA75D]"/>
+            <SiMongodb className="text-[#00EA63]"/>
+            <Image src={logoNext} alt="logo-nextjs" width={50} height={50} className="text-[#6DA75D]"/>
+            <FaWordpress className="text-[#007298]"/>
+            <AiFillGithub className="text-black"/>
+            </div>
         </div>
 
-        <div className="grid grid-cols-3 mx-[420px]">
+        <div className="grid grid-cols-3 text-center mt-[20px]">
           <div className="mt-5">
             <p className="text-2xl font-extrabold">Lenguajes</p>
             <ol className="font-light p-3 text-xl">
@@ -94,9 +71,9 @@ const Skills = () => {
       </div>
 
       <h3 className="text-white text-center font-bold mt-[50px] mb-5 uppercase text-[30px]">
-          Habilidades<span className="text-transparent bg-clip-text bg-gradient-to-r from-[#FF512F] via-[#F09819] to-[#FF512F] font-extrabold"> Blandas</span>
+          Habilidades<span className="text-transparent bg-clip-text bg-gradient-to-r from-[#FF512F] via-[#F09819] to-[#FF512F] font-extrabold"> Blandas</span> 🧠
         </h3>
-      <div className="text-white m-10 mx-[180px] text-md bg-[#1E293B] rounded-lg p-7 mb-[100px] text-xl">
+      <div className="text-white m-10 mx-[70px] text-md bg-[#1E293B] rounded-lg p-7 mb-[100px] text-xl sm:mx-[50px]">
         <p>
           <span className="font-bold text-md">Comunicacion efectiva:</span> Tengo la capacidad
           de comunicarme de manera efectiva con compañeros de trabajo, clientes

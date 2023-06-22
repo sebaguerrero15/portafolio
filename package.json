@@ -9,6 +9,7 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "@emailjs/browser": "^3.11.0",
     "@react-icons/all-files": "^4.1.0",
     "@tailwindcss/typography": "^0.5.9",
     "animate.css": "^4.1.1",
@@ -17,8 +18,10 @@
     "next": "13.2.4",
     "react": "18.2.0",
     "react-dom": "18.2.0",
+    "react-hook-form": "^7.45.0",
     "react-icons": "^4.8.0",
-    "react-scroll": "^1.8.9"
+    "react-scroll": "^1.8.9",
+    "sweetalert2": "^11.7.12"
   },
   "devDependencies": {
     "autoprefixer": "^10.4.14",

@@ -1,4 +1,5 @@
 import Link from "next/link";
+import { FaFilePdf } from 'react-icons/fa';
 
 const About = () => {
   return (
@@ -6,14 +7,14 @@ const About = () => {
       id="about"
       className="p-10 mx-[300px] my-[90px] border-t border-gray-300"
     >
-      <h2 className="text-white text-center uppercase font-bold mb-10 text-[30px]">
+      <h2 className="text-white text-center uppercase font-bold mb-10 text-[30px] sm:m-0">
         <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#FF512F] via-[#F09819] to-[#FF512F] font-extrabold">
           Acerca
         </span>{" "}
         de Mi
       </h2>
       <span className="text-white">imagen</span>
-      <article className="text-white container text-md text-xl">
+      <article className="text-white text-md text-xl sm:m-[30px]">
         <p>
           Soy chileno , mi profesion es Ingeniero Informatico titulado el año
           2015. Doglover 🐶 fanatico de las tecnologias, las series y los juegos
@@ -41,9 +42,10 @@ const About = () => {
       </article>
 
       <br />
-      <article className="text-white">
-        <p className="font-semibold text-xl">CV ADJUNTO</p>
-        <Link href="/pdf/CV_SEBASTIAN_GUERRERO.pdf" target='_blank' download='CV_SEBASTIAN_GUERRERO.pdf' className="text-[#FC7903] text-lg font-bold uppercase">Descargar CV en PDF</Link>
+      <article className="text-white text-center">
+        <p className="font-semibold text-xl flex justify-center sm:mb-4">CURRICULUM ADJUNTO</p>
+
+        <Link href="/CV_SEBASTIAN_GUERRERO.pdf" target='_blank' download="CV_SEBASTIAN_GUERRERO.pdf" className="text-[#FC7903] text-lg font-bold uppercase flex justify-center gap-2">Descargar CV en PDF <FaFilePdf className="text-white"/></Link> 
       </article>
     </section>
   );
