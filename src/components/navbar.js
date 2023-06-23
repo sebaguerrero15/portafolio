@@ -15,7 +15,7 @@ const Navbar = () => {
  
 useEffect(() => {
   window.addEventListener('scroll', () => {
-    window.scrollY > 60 ? setIsActive(true) : setIsActive(false)
+    window.scrollY > 70 ? setIsActive(true) : setIsActive(false)
   })
 }, [])
 
@@ -23,24 +23,24 @@ useEffect(() => {
 
     <header>
     <nav>
-      <ul className={`${isActive ? "bg-black py-2 shadow-md" : "bg-none py-2"} flex justify-end px-4 fixed items-center w-full transition-all z-10 top-0 space-x-8 text-md"`}>
+      <ul className={`${isActive ? "md:bg-black py-2 shadow-md" : "bg-none py-2"} md:flex md:justify-end px-4 fixed items-center w-full transition-all z-10 top-0 space-x-4 text-md sm:grid sm:grid-cols-1 sm:justify-start"`}>
             <li>
-              <Link href="/" className="text-[#FC7903] font-bold flex gap-2 items-center hover:bg-[#292929] hover:rounded-md p-2">
+              <Link href="/" className="text-[#FC7903] font-bold flex gap-2 items-center hover:bg-[#292929] hover:rounded-md p-2 sm:ml-[18px]">
                 INICIO <AiFillHome />
                 </Link>
                 </li>
                 <li>
-              <Scroll activeClass="active" to="about" smooth={true} duration={1500} offset={-30} className="text-[#FC7903] font-bold flex gap-2 items-center hover:bg-[#292929] cursor-pointer hover:rounded-md p-2">
+              <Scroll activeClass="active" to="about" smooth={true} duration={1500} offset={-44} className="text-[#FC7903] font-bold flex gap-2 items-center hover:bg-[#292929] cursor-pointer hover:rounded-md p-2">
                 ACERCA DE MI <CgUserlane />
               </Scroll>
               </li>
               <li>
-              <Scroll activeClass="active" to="skills" smooth={true} duration={1500} offset={-100} className="text-[#FC7903] font-bold flex gap-2 items-center hover:bg-[#292929] cursor-pointer hover:rounded-md p-2">
+              <Scroll activeClass="active" to="skills" smooth={true} duration={1500} offset={-70} className="text-[#FC7903] font-bold flex gap-2 items-center hover:bg-[#292929] cursor-pointer hover:rounded-md p-2">
                 SKILLS <AiFillThunderbolt />
               </Scroll>
               </li>
               <li>
-              <Scroll activeClass="active" to="proyectos" smooth={true} duration={1500} offset={-100} className="text-[#FC7903] font-bold flex gap-2 items-center hover:bg-[#292929] cursor-pointer hover:rounded-md p-2">
+              <Scroll activeClass="active" to="proyectos" smooth={true} duration={1500} offset={-70} className="text-[#FC7903] font-bold flex gap-2 items-center hover:bg-[#292929] cursor-pointer hover:rounded-md p-2">
                 PROYECTOS <BiTask />
                 </Scroll>
                 </li>

@@ -5,16 +5,16 @@ const About = () => {
   return (
     <section
       id="about"
-      className="p-10 mx-[300px] my-[90px] border-t border-gray-300"
+      className="p-2 xl:mx-[200px] my-[90px] border-t border-gray-300 sm:mx-[30px]"
     >
-      <h2 className="text-white text-center uppercase font-bold mb-10 text-[30px] sm:m-0">
+      <h2 className="text-white text-center uppercase font-bold mb-10 text-[30px] sm:mx-[50px]">
         <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#FF512F] via-[#F09819] to-[#FF512F] font-extrabold">
-          Acerca
+          Acerca 
         </span>{" "}
         de Mi
       </h2>
-      <span className="text-white">imagen</span>
-      <article className="text-white text-md text-xl sm:m-[30px]">
+      <span className="text-white text-center">imagen</span>
+      <article className="text-white text-xl text-justify">
         <p>
           Soy chileno , mi profesion es Ingeniero Informatico titulado el año
           2015. Doglover 🐶 fanatico de las tecnologias, las series y los juegos
@@ -33,7 +33,7 @@ const About = () => {
       </article>
       <br />
 
-      <article className="text-white container text-xl">
+      <article className="text-white text-xl text-justify">
         <h2 className="uppercase font-bold">Experiencia</h2>
         <p>
           Tengo experiencia trabajando con distintos frameworks como react
@@ -45,7 +45,7 @@ const About = () => {
       <article className="text-white text-center">
         <p className="font-semibold text-xl flex justify-center sm:mb-4">CURRICULUM ADJUNTO</p>
 
-        <Link href="/CV_SEBASTIAN_GUERRERO.pdf" target='_blank' download="CV_SEBASTIAN_GUERRERO.pdf" className="text-[#FC7903] text-lg font-bold uppercase flex justify-center gap-2">Descargar CV en PDF <FaFilePdf className="text-white"/></Link> 
+        <Link href="/CV_SEBASTIAN_GUERRERO.pdf" target='_blank' download="CV_SEBASTIAN_GUERRERO.pdf" className="text-[#FC7903] text-lg font-bold uppercase flex justify-center  gap-2">Descargar CV en PDF <FaFilePdf className="text-white"/></Link> 
       </article>
     </section>
   );

@@ -40,11 +40,11 @@ const Proyectos = () => {
        
   <section className="mt-10">
     <h2 id="proyectos" className="text-white uppercase font-bold mb-10 text-[30px] text-center">Mis proyectos <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#FF512F] via-[#F09819] to-[#FF512F] font-extrabold">Realizados</span> 📑</h2>
-    <ul className="grid grid-cols-2 text-white sm:grid sm:grid-cols-1">
+    <ul className="grid grid-cols-2 text-white sm:grid lg:grid-cols-2 lg:mx-[100px] sm:grid-cols-1">
       {trabajos.map((trabajo) => (
-        <li key={trabajo.id} className="bg-[#1E293B] m-auto h-[580px] w-[600px] rounded-md mb-11">
+        <li key={trabajo.id} className="bg-[#1E293B] m-auto h-[480px] w-[500px] rounded-md mb-11">
           <h3 className="m-5 text-extrabold text-center font-bold text-lg">{trabajo.titulo}</h3>
-          <Image src={trabajo.imagen} alt={trabajo.titulo} width={570} height={370} className="m-auto rounded-lg"/>
+          <Image src={trabajo.imagen} alt={trabajo.titulo} width={470} height={270} className="m-auto rounded-lg"/>
           <p className="mt-3 ml-5 text-lg">{trabajo.description}</p>
           <p>{trabajo.tecnologias}</p>
           <a href={trabajo.link} target="_blank" rel="noopener noreferrer" className="uppercase text-lg font-extrabold ml-5 text-transparent bg-clip-text bg-gradient-to-r from-[#FF512F] via-[#F09819] to-[#FF512F]">

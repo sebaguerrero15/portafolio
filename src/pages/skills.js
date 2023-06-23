@@ -20,8 +20,8 @@ const Skills = () => {
         <h3 className="font-bold mt-[50px] text-center mb-5 uppercase text-[30px]">
           Habilidades<span className="text-transparent bg-clip-text bg-gradient-to-r from-[#FF512F] via-[#F09819] to-[#FF512F] font-extrabold"> Técnicas</span> 🚀
         </h3>
-        <div className="mx-[300px] mt-[30px] text-[50px] bg-[#1E293B] rounded-lg p-4 ">
-          <div className="grid grid-cols-4 gap-4 justify-items-center sm:mx-[10px]">
+        <div className="lg:mx-[300px] lg:mt-[30px] text-[50px] bg-[#1E293B] rounded-lg p-4 sm:mx-[120px]">
+          <div className="grid grid-cols-4 gap-4 justify-items-center">
             <AiFillHtml5 className="text-[#F16524]"/>
             <DiCss3 className="text-[#01B5F2]"/>
             <SiJavascript className="text-[#F7E018]" />
@@ -37,7 +37,7 @@ const Skills = () => {
             </div>
         </div>
 
-        <div className="grid grid-cols-3 text-center mt-[20px]">
+        <div className="grid grid-cols-3 text-center lg:mx-[320px]">
           <div className="mt-5">
             <p className="text-2xl font-extrabold">Lenguajes</p>
             <ol className="font-light p-3 text-xl">
@@ -73,7 +73,7 @@ const Skills = () => {
       <h3 className="text-white text-center font-bold mt-[50px] mb-5 uppercase text-[30px]">
           Habilidades<span className="text-transparent bg-clip-text bg-gradient-to-r from-[#FF512F] via-[#F09819] to-[#FF512F] font-extrabold"> Blandas</span> 🧠
         </h3>
-      <div className="text-white m-10 mx-[70px] text-md bg-[#1E293B] rounded-lg p-7 mb-[100px] text-xl sm:mx-[50px]">
+      <div className="text-white m-10 mx-[70px] text-md bg-[#1E293B] rounded-lg p-7 mb-[100px] text-xl sm:mx-[50px] lg:mx-[200px]">
         <p>
           <span className="font-bold text-md">Comunicacion efectiva:</span> Tengo la capacidad
           de comunicarme de manera efectiva con compañeros de trabajo, clientes
