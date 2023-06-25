@@ -21,7 +21,7 @@ export default function Home() {
         
         <Navbar id="inicio"/>
 
-        <main id="inicio" className="h-screen w-full md:mt-[150px] sm:mt-[220px]">
+        <main id="inicio" className="h-screen w-full md:mt-[150px] sm:mt-[250px]">
           <section>
             <h1 className="text-[80px] ml-[200px] font-extrabold text-transparent bg-clip-text bg-gradient-to-r from-[#FF512F] via-[#F09819] to-[#FF512F] sm:mx-[200px] animate__bounceInLeft animate__delay-2s">Hola!</h1>
 

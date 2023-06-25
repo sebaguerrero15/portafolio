@@ -12,6 +12,7 @@ export default function Document() {
           rel="stylesheet"
         />
         
+        
         {/* <link
           rel="stylesheet"
           href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css"
@@ -25,6 +26,8 @@ export default function Document() {
       <body className="bg-[#030418]">
         <Main />
         <NextScript />
+
+       
       </body>
     </Html>
   );
