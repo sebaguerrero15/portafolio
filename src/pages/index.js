@@ -28,7 +28,7 @@ export default function Home() {
             <h2 className="text-white uppercase font-extrabold text-[50px] ml-[230px] mt-8 sm:mx-[60px] sm:text-center">Bienvenid@ a mi <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#FF512F] via-[#F09819] to-[#FF512F] font-extrabold">Portafolio</span></h2>
 
             <h3 className="text-4xl text-white font-bold mt-8 ml-[180px]"><span className="text-transparent bg-clip-text bg-gradient-to-r from-[#FF512F] via-[#F09819] to-[#FF512F]">Soy </span>Seba Guerrero</h3>
-            <p className="text-2xl font-light text-white ml-[190px] sm:mx-[200px]">Desarollador Web Front-End 😎</p>
+            <p className="text-2xl font-light text-white ml-[190px] mx-[120px]">Desarollador Web Front-End 😎</p>
           </section>
         </main>
         <About id="about"/>
