@@ -21,15 +21,15 @@ const Navbar = () => {
   return (
     <header className="w-full fixed top-0 right-0">
       <nav
-        className="bg-black md:flex items-center justify-end md:py-4 sm:py-8 md:px-10 px-7"
+        className="bg-[#02030c] shadow-lg md:flex justify-end md:py-2 sm:py-8 md:px-10 px-7"
       >
-      <div className='font-bold text-2xl cursor-pointer flex items-center font-[Poppins] 
-      text-gray-800'>
-        <span className='text-3xl text-indigo-600 mr-1 pt-2'>
+      <div className='font-bold text-2xl cursor-pointer flex md:absolute md:left-8 text-gray-800 m-0'>
+        <span className='text-3xl text-indigo-600'>
         <ion-icon name="logo-ionic"></ion-icon>
         </span>
         S.Guerrero
       </div>
+
         <div
           onClick={()=>setOpen(!open)}
           className="text-3xl absolute right-8 top-6 cursor-pointer md:hidden"
@@ -40,7 +40,7 @@ const Navbar = () => {
         </div>
 
         <ul
-          className={`md:flex md:items-center md:pb-0 pb-3 md:justify-end absolute md:static md:z-auto z-[-1] left-0 w-full md:w-auto md:pl-0 pl-9 transition-all duration-500 ease-in ${open ? "bg-black top-[90px]" : "top-[-490px]"
+          className={`md:flex md:items-center md:pb-0 pb-3 md:justify-end absolute md:static md:z-auto z-[-1] left-0 w-full md:w-auto md:pl-0 pl-9 transition-all duration-500 ease-in ${open ? "bg-[#02030c] top-[90px]" : "top-[-490px]"
           }`}
         >
           <li>
@@ -57,7 +57,7 @@ const Navbar = () => {
               to="about"
               smooth={true}
               duration={1500}
-              offset={-44}
+              offset={-130}
               className="text-[#FC7903] font-bold flex gap-2 items-center hover:bg-[#292929] cursor-pointer hover:rounded-md p-2"
             >
               ACERCA DE MI <CgUserlane />
@@ -69,7 +69,7 @@ const Navbar = () => {
               to="skills"
               smooth={true}
               duration={1500}
-              offset={-70}
+              offset={-130}
               className="text-[#FC7903] font-bold flex gap-2 items-center hover:bg-[#292929] cursor-pointer hover:rounded-md p-2"
             >
               SKILLS <AiFillThunderbolt />
@@ -81,7 +81,7 @@ const Navbar = () => {
               to="proyectos"
               smooth={true}
               duration={1500}
-              offset={-70}
+              offset={-130}
               className="text-[#FC7903] font-bold flex gap-2 items-center hover:bg-[#292929] cursor-pointer hover:rounded-md p-2"
             >
               PROYECTOS <BiTask />
@@ -92,8 +92,8 @@ const Navbar = () => {
               activeClass="active"
               to="contacto"
               smooth={true}
+              offset={-130}
               duration={1500}
-              offset={-100}
               className="text-[#FC7903] font-bold flex gap-2 items-center hover:bg-[#292929] cursor-pointer hover:rounded-md p-2"
             >
               CONTACTO <MdEmail />

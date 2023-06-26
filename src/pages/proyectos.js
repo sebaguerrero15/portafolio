@@ -5,15 +5,17 @@ const Proyectos = () => {
     {
       id: 1,
       titulo: "GuitarLA",
-      description: "Trabajo realizado con Nextjs version 12, utilizando Tailwindcss",
+      description: "Frontend - Tienda de Venta de Guitarras",
+      tecnologias: "NextJS, TailwindCSS",
       imagen: "/img/guitarla.png",
       link: "https://guitar-la-next-five.vercel.app/",
+      linkGit: "prueba",
     },
     {
       id: 2,
       titulo: "El Perchero",
-      description: "Tienda de ropa y accesorios para Hombres y Mujeres",
-      tecnologias: "React, Vite, TailwindCss, Hooks, Context, React Router",
+      description: "Frontend - Tienda de ropa y accesorios",
+      tecnologias: "React, Vite, TailwindCSS, Hooks, Context, React Router",
       imagen: "/img/elperchero.png",
       link: "https://el-perchero.vercel.app/",
       linkGit: "prueba"
@@ -22,15 +24,19 @@ const Proyectos = () => {
       id: 3,
       titulo: "Proyecto 3",
       description: "Descripción del proyecto 3.",
-      imagen: "/proyecto3.jpg",
+      tecnologias: "React, Vite, TailwindCSS, Hooks, Context, React Router",
+      imagen: "/img/webpersonal.png",
       link: "https://www.ejemplo.com/proyecto3",
+      linkGit: "prueba",
     },
     {
       id: 4,
       titulo: "Portafolio",
-      description: "Portafolio sobre mi experiencia y conocimientos",
-      imagen: "/img/webpersonal.png",
+      description: "FullStack",
+      tecnologias: "React, NextJS 13, TailwindCSS, Hooks",
+      imagen: "/img/guitarla.png",
       link: "https://www.ejemplo.com/proyecto4",
+      linkGit: "prueba",
     },
   ];
 
@@ -38,22 +44,28 @@ const Proyectos = () => {
 
   return (
        
-  <section className="mt-10">
+  <section className="mt-[180px]">
     <h2 id="proyectos" className="text-white uppercase font-bold mb-10 text-[30px] text-center">Mis proyectos <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#FF512F] via-[#F09819] to-[#FF512F] font-extrabold">Realizados</span> 📑</h2>
-    <ul className="grid grid-cols-2 text-white sm:grid lg:grid-cols-2 lg:mx-[100px] sm:grid-cols-1">
+    <ul className="grid grid-cols-2 justify-items-center text-white sm:grid lg:grid-cols-2 lg:mx-[100px] sm:grid-cols-1">
       {trabajos.map((trabajo) => (
-        <li key={trabajo.id} className="bg-[#1E293B] m-auto h-[480px] w-[500px] rounded-md mb-11">
-          <h3 className="m-5 text-extrabold text-center font-bold text-lg">{trabajo.titulo}</h3>
-          <Image src={trabajo.imagen} alt={trabajo.titulo} width={470} height={270} className="m-auto rounded-lg"/>
-          <p className="mt-3 ml-5 text-lg">{trabajo.description}</p>
-          <p>{trabajo.tecnologias}</p>
-          <a href={trabajo.link} target="_blank" rel="noopener noreferrer" className="uppercase text-lg font-extrabold ml-5 text-transparent bg-clip-text bg-gradient-to-r from-[#FF512F] via-[#F09819] to-[#FF512F]">
+        <li key={trabajo.id} className="bg-[#1E293B]  h-[560px] w-[540px] rounded-md mb-11">
+          <h3 className="m-2 text-extrabold text-center font-bold text-xl">{trabajo.titulo}</h3>
+          <Image src={trabajo.imagen} alt={trabajo.titulo} width={450} height={250} className="m-auto rounded-lg"/>
+          <p className="mt-3 ml-5 text-xl flex justify-center">{trabajo.description}</p>
+
+          <div className="flex flex-col justify-center items-center ml-5 mt-5">
+          <p className="font-bold uppercase text-md">Tecnologias usadas: </p>
+          <p className="mt-1 ml-5 text-lg">{trabajo.tecnologias}</p>
+          </div>
+
+          <div className="flex justify-center gap-3 mt-10">
+          <a href={trabajo.link} target="_blank" rel="noopener noreferrer" className="bg-[#030418] uppercase text-lg font-extrabold ml-5 text-transparent border-2 p-1 rounded-md text-white hover:bg-[#FC7903]">
             Ver Demo
           </a>
-          <br />
-          <a href={trabajo.linkGit} target="_blank" rel="noopener noreferrer" className="uppercase text-lg font-extrabold text-transparent text-white p-1 border-2 rounded-md">
+          <a href={trabajo.linkGit} target="_blank" rel="noopener noreferrer" className="uppercase text-lg font-extrabold text-transparent text-white p-1 border-2 rounded-md cursor-pointer hover:duration-100 bg-[#030418] hover:bg-[#FC7903]">
             Ver Código
           </a>
+          </div>
         </li>
       ))}
     </ul>

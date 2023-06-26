@@ -16,7 +16,7 @@ const Skills = () => {
 
   return (
     <section id="skills">
-      <div className="text-white">
+      <div className="text-white mt-[180px]">
         <h3 className="font-bold mt-[50px] text-center mb-5 uppercase text-[30px]">
           Habilidades<span className="text-transparent bg-clip-text bg-gradient-to-r from-[#FF512F] via-[#F09819] to-[#FF512F] font-extrabold"> Técnicas</span> 🚀
         </h3>

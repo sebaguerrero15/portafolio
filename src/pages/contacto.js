@@ -9,7 +9,7 @@ const Contacto = () => {
 
 
   return (
-    <section className="mt-[50px]">
+    <section className="mt-[110px] py-6">
     <div id="contacto">
         <h2 className="text-white text-center uppercase font-bold mb-10 text-[30px]"><span className="text-transparent bg-clip-text bg-gradient-to-r from-[#FF512F] via-[#F09819] to-[#FF512F] font-extrabold">Enviame un correo </span>✉️</h2>
 

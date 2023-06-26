@@ -3,10 +3,10 @@ import { FaFilePdf } from 'react-icons/fa';
 
 const About = () => {
   return (
+  
     <section
-      id="about"
-      className="p-2 xl:mx-[200px] my-[90px] border-t border-gray-300 sm:mx-[30px]"
-    >
+    id="about"
+      className="p-2 mt-[350px] xl:mx-[200px] sm:mx-[30px]">
       <h2 className="text-white text-center uppercase font-bold mb-10 text-[30px] sm:mx-[50px]">
         <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#FF512F] via-[#F09819] to-[#FF512F] font-extrabold">
           Acerca 
@@ -16,10 +16,7 @@ const About = () => {
       <span className="text-white text-center">imagen</span>
       <article className="text-white text-xl text-justify">
         <p>
-          Soy chileno , mi profesion es Ingeniero Informatico titulado el año
-          2015. Doglover 🐶 fanatico de las tecnologias, las series y los juegos
-          de mesa. Me apasiona el desarrollo web, especificamente el FullStack,
-          y aprender siempre nuevas tecnologias.
+        Soy chileno, mi profesión es Ingeniero Informático titulado el año 2015. Doglover 🐶 fanático de la tecnología, las series y los juegos de mesa. Me apasiona el desarrollo web, específicamente el FullStack, y aprender siempre nuevas tecnologías y habilidades.
         </p>
         <br />
         <p>
@@ -48,6 +45,7 @@ const About = () => {
         <Link href="/CV_SEBASTIAN_GUERRERO.pdf" target='_blank' download="CV_SEBASTIAN_GUERRERO.pdf" className="text-[#FC7903] text-lg font-bold uppercase flex justify-center  gap-2">Descargar CV en PDF <FaFilePdf className="text-white"/></Link> 
       </article>
     </section>
+  
   );
 };
 

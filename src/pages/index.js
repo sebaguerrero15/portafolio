@@ -21,9 +21,9 @@ export default function Home() {
         
         <Navbar id="inicio"/>
 
-        <main id="inicio" className="h-screen w-full md:mt-[150px] sm:mt-[250px]">
+        <main id="inicio" className="w-full md:mt-[180px] sm:mt-[320px]">
           <section>
-            <h1 className="text-[80px] ml-[200px] font-extrabold text-transparent bg-clip-text bg-gradient-to-r from-[#FF512F] via-[#F09819] to-[#FF512F] sm:mx-[200px] animate__bounceInLeft animate__delay-2s">Hola!</h1>
+            <h1 className="text-[80px] ml-[200px] font-extrabold text-transparent bg-clip-text bg-gradient-to-r from-[#FF512F] via-[#F09819] to-[#FF512F] sm:mx-[200px] animate__backInLeft">Hola!</h1>
 
             <h2 className="text-white uppercase font-extrabold text-[50px] ml-[230px] mt-8 sm:mx-[60px] sm:text-center">Bienvenid@ a mi <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#FF512F] via-[#F09819] to-[#FF512F] font-extrabold">Portafolio</span></h2>
 
@@ -38,9 +38,10 @@ export default function Home() {
 
         <Scroll
       activeClass="active" 
-      to="inicio" smooth={true} 
+      to="inicio" 
+      smooth={true} 
       duration={1500} 
-      offset={-150} 
+      offset={-200} 
       className="text-[#FC7903] cursor-pointer flex justify-center m-8 text-[70px] hover:text-white hover:bg-[#05071b]">
       <MdOutlineKeyboardDoubleArrowUp />
       </Scroll>
