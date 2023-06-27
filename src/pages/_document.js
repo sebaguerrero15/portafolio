@@ -12,18 +12,9 @@ export default function Document() {
           rel="stylesheet"
         />
         
-        
-        {/* <link
-          rel="stylesheet"
-          href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css"
-          integrity="sha512-oHDEc8Xed4hiW6CxD7qjbnI+B07vDdX7hEPTvn9pSZO1bcRqHp8mj9pyr+
-                8RVC2GmtEfI2Bi9Ke9Ass0as+zpg=="
-          crossorigin="anonymous"
-          referrerpolicy="no-referrer"
-        /> */}
       </Head>
 
-      <body className="bg-[#030418]">
+      <body className="bg-gradient-to-r from-[#030024] via-[#020114] to-[#010011]">
         <Main />
         <NextScript />
 

@@ -23,8 +23,8 @@ const Proyectos = () => {
     {
       id: 3,
       titulo: "Proyecto 3",
-      description: "Descripción del proyecto 3.",
-      tecnologias: "React, Vite, TailwindCSS, Hooks, Context, React Router",
+      description: "Frontend - Portafolio Personal",
+      tecnologias: "React, NextJS 13, TailwindCSS, Hooks",
       imagen: "/img/webpersonal.png",
       link: "https://www.ejemplo.com/proyecto3",
       linkGit: "prueba",
@@ -46,9 +46,9 @@ const Proyectos = () => {
        
   <section className="mt-[180px]">
     <h2 id="proyectos" className="text-white uppercase font-bold mb-10 text-[30px] text-center">Mis proyectos <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#FF512F] via-[#F09819] to-[#FF512F] font-extrabold">Realizados</span> 📑</h2>
-    <ul className="grid grid-cols-2 justify-items-center text-white sm:grid lg:grid-cols-2 lg:mx-[100px] sm:grid-cols-1">
+    <ul className="md:grid md:grid-cols-2 md:justify-items-center md:mx-11 text-white sm:grid sm:grid-cols-1 sm:justify-items-center">
       {trabajos.map((trabajo) => (
-        <li key={trabajo.id} className="bg-[#1E293B]  h-[560px] w-[540px] rounded-md mb-11">
+        <li key={trabajo.id} className="bg-[#1E293B] h-[560px] w-[540px] rounded-md mb-11">
           <h3 className="m-2 text-extrabold text-center font-bold text-xl">{trabajo.titulo}</h3>
           <Image src={trabajo.imagen} alt={trabajo.titulo} width={450} height={250} className="m-auto rounded-lg"/>
           <p className="mt-3 ml-5 text-xl flex justify-center">{trabajo.description}</p>

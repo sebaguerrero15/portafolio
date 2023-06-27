@@ -1,15 +1,13 @@
 import { useState } from "react";
 import emailjs from '@emailjs/browser';
 import Swal from 'sweetalert2';
+import Image from "next/image";
 
 const Contacto = () => {
 
 
-
-
-
   return (
-    <section className="mt-[110px] py-6">
+    <section className="mt-[110px] py-6 md:flex md:justify-center md:gap-[60px] md:items-center">
     <div id="contacto">
         <h2 className="text-white text-center uppercase font-bold mb-10 text-[30px]"><span className="text-transparent bg-clip-text bg-gradient-to-r from-[#FF512F] via-[#F09819] to-[#FF512F] font-extrabold">Enviame un correo </span>✉️</h2>
 
@@ -31,6 +29,9 @@ const Contacto = () => {
         </button>
       </form>
     </div>
+    {/* <div className="sm:flex justify-center">
+    <Image src={r2d2Gift} alt="r2d2" width={450} height={450} />
+    </div> */}
     </section>
   );
 };

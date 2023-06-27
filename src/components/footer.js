@@ -1,3 +1,4 @@
+import { Link as Scroll } from "react-scroll";
 import Link from "next/link";
 import Image from "next/image";
 import { AiOutlineLinkedin } from "@react-icons/all-files/ai/AiOutlineLinkedin";
@@ -9,46 +10,68 @@ const Footer = () => {
     <footer className="flex-shrink-0 bg-[#02030c] py-8 items-center">
       <div className="container mx-auto text-center grid grid-cols-3">
         <nav className="text-[#FC7903] font-bold grid justify-center mt-5 text-sm">
-          <Link
-            href="/proyectos"
-            className="hover:text-white"
-          >
-            PROYECTOS
-          </Link>
-
-          <Link
-            href="/about"
-            className="hover:text-white"
+          <Scroll
+             activeClass="active"
+             to="about"
+             smooth={true}
+             duration={1500}
+             offset={-130}
+            className="hover:text-white cursor-pointer"
           >
             ACERCA DE MI
-          </Link>
+          </Scroll>
 
-          <Link
-            href="/skills"
-            className="hover:text-white"
+          <Scroll
+            className="hover:text-white cursor-pointer"
+              activeClass="active"
+              to="skills"
+              smooth={true}
+              duration={1500}
+              offset={-130}
           >
             SKILLS
-          </Link>
+          </Scroll>
 
-          <Link
-            href="/contacto"
-            className="hover:text-white"
+          <Scroll
+            activeClass="active"
+            to="proyectos"
+            smooth={true}
+            duration={1500}
+            offset={-130}
+            className="hover:text-white cursor-pointer"
+          >
+            PROYECTOS
+          </Scroll>
+
+          <Scroll
+            activeClass="active"
+            to="contacto"
+            smooth={true}
+            offset={-130}
+            duration={1500}
+            className="hover:text-white cursor-pointer"
           >
             CONTACTO
-          </Link>
+          </Scroll>
         </nav>
 
         <div className="grid px-11">
           <nav className="flex justify-center mt-5 text-[#FC7903]">
-            <Link href="/" className="hover:text-white text-4xl">
+            <Link href="https://github.com/sebaguerrero15" 
+            target="__blank" 
+            className="hover:text-white text-4xl">
               <FiGithub />
             </Link>
 
-            <Link href="/" className="hover:text-white text-4xl">
+            <Link href="https://www.linkedin.com/in/sguerreroahumada/" 
+            target="__blank" 
+            className="hover:text-white text-4xl">
               <AiOutlineLinkedin />
             </Link>
 
-            <Link href="/" className="hover:text-white text-4xl">
+            <Link href="https://www.instagram.com/sebaguerreroahumada/" 
+            target="__blank" 
+            className="hover:text-white text-4xl">
               <AiOutlineInstagram />
             </Link>
           </nav>
@@ -59,7 +82,7 @@ const Footer = () => {
           <p className="font-bold text-white">correo@correo.cl</p>
         </div>
         <div className="ml-[100px]">
-          logo
+          <Image src="/img/r2d2.png" alt="logo web" width={100} height={100}/>
         </div>
       </div>
     </footer>
