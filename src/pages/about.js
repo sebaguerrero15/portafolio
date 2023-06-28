@@ -10,18 +10,18 @@ const About = () => {
         </span>{" "}
         de Mi
       </h2>
+      
       <article className="text-white text-xl text-justify p-4 rounded-md bg-[#1E293B]">
         <p>
-          De profesión Ingeniero Informático, chileno titulado el año
-          2015. Doglover 🐶 fanático de la tecnología, las series y los juegos
-          de mesa. Me apasiona el desarrollo web, específicamente el FullStack,
-          y aprender siempre nuevas tecnologías y habilidades en general.
+          De profesión Ingeniero <span className="font-bold">Informático,</span> chileno titulado el año
+          2015. Tengo un perro llamado Luke 🐶 fanático de la tecnología, las series y los juegos
+          de mesa. Me apasiona el <span className="font-bold">desarrollo web,</span> específicamente el <span className="font-bold">FullStack,</span> y aprender siempre nuevas tecnologías y habilidades en general.
         </p>
         <br />
         <p>
           Como desarrollador cuento con experiencia
-          en React y su ecosistema, me gustaría destacar que poseo conocimientos en bases de datos relacionales y no relacionales. He trabajado con frameworks como Nextjs, node y otras bibliotecas
-          relevantes. También tengo experiencia en docker y metodologia scrum.
+          en <span className="font-bold">React,</span> y su ecosistema, me gustaría destacar que poseo conocimientos en bases de datos relacionales y no relacionales. He trabajado con frameworks como <span className="font-bold">NextJS, node</span> y otras bibliotecas
+          relevantes. También tengo experiencia en <span className="font-bold">docker, webscraping y testing.</span> 
         </p>
       </article>
       <br />
@@ -35,6 +35,7 @@ const About = () => {
             13, nodejs y biblioteca React
           </p>
         </div>
+        
 
         <div className="mt-4">
           <h3 className="font-bold">Administrador Informático:</h3>

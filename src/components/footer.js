@@ -8,7 +8,7 @@ import { AiOutlineInstagram } from "@react-icons/all-files/ai/AiOutlineInstagram
 const Footer = () => {
   return (
     <footer className="flex-shrink-0 bg-[#02030c] py-8 items-center">
-      <div className="container mx-auto text-center grid grid-cols-3">
+      <div className="mx-auto text-center grid grid-cols-3">
         <nav className="text-[#FC7903] font-bold grid justify-center mt-5 text-sm">
           <Scroll
              activeClass="active"
@@ -75,10 +75,12 @@ const Footer = () => {
               <AiOutlineInstagram />
             </Link>
           </nav>
-          <p className="text-white">
-            Sebastian Guerrero Ahumada © {new Date().getFullYear()} /
-            Desarrollador Front-End.
+          <div className="text-white text-center">
+          <p className="text-white text-center">
+            Sebastian Guerrero Ahumada © {new Date().getFullYear()}
           </p>
+          <p className="text-center">Desarrollador Front-End.</p>
+          </div>
           <p className="font-bold text-white">correo@correo.cl</p>
         </div>
         <div className="ml-[100px]">

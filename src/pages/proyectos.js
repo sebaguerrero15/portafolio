@@ -59,10 +59,10 @@ const Proyectos = () => {
           </div>
 
           <div className="flex justify-center gap-3 mt-10">
-          <a href={trabajo.link} target="_blank" rel="noopener noreferrer" className="bg-[#030418] uppercase text-lg font-extrabold ml-5 text-transparent p-1 rounded-md text-white hover:bg-[#FC7903]">
+          <a href={trabajo.link} target="_blank" rel="noopener noreferrer" className="bg-[#030418] shadow-md shadow-[#030418] uppercase text-lg font-extrabold ml-5 text-transparent p-1 rounded-md text-white hover:bg-[#FC7903]">
             Ver Demo
           </a>
-          <a href={trabajo.linkGit} target="_blank" rel="noopener noreferrer" className="uppercase text-lg font-extrabold text-transparent text-white p-1 rounded-md cursor-pointer hover:duration-100 bg-[#030418] hover:bg-[#FC7903]">
+          <a href={trabajo.linkGit} target="_blank" rel="noopener noreferrer" className="uppercase shadow-md shadow-[#030418] text-lg font-extrabold text-transparent text-white p-1 rounded-md cursor-pointer hover:duration-100 bg-[#030418] hover:bg-[#FC7903]">
             Ver Código
           </a>
           </div>

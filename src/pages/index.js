@@ -40,22 +40,22 @@ export default function Home() {
                   href="https://www.linkedin.com/in/sguerreroahumada/"
                   target="__blank"
                 >
-                  <AiFillLinkedin className="text-[#0A66C2] text-[50px] md:ml-[150px] sm:justify-center hover:hover:scale-110" />
+                  <AiFillLinkedin className="text-[#0A66C2] text-[50px] md:ml-[150px] sm:justify-center hover:hover:scale-110 duration-75" />
                 </Link>
                 <Link href="https://github.com/sebaguerrero15" target="__blank">
-                  <AiFillGithub className="text-white text-[50px] hover:hover:scale-110" />
+                  <AiFillGithub className="text-white text-[50px] hover:hover:scale-110 duration-75" />
                 </Link>
                 <Link
                   href="https://www.instagram.com/sebaguerreroahumada/"
                   target="__blank"
                 >
-                  <BsInstagram className="text-[50px] text-[#fb3699] hover:scale-110 transform" />
+                  <BsInstagram className="text-[50px] text-[#fb3699] hover:scale-110 duration-75" />
                 </Link>
               </div>
 
               <div className="md:flex uppercase sm:justify-items-center">
                 <h3 className="text-3xl text-white font-bold mt-8 ml-[180px]">
-                  <span className="font-bold text-transparent bg-clip-text bg-gradient-to-r from-[#FF512F] via-[#F09819] to-[#FF512F]">
+                  <span className="font-extrabold text-transparent bg-clip-text bg-gradient-to-r from-[#FF512F] via-[#F09819] to-[#FF512F]">
                     Soy{" "}
                   </span>
                   Sebastián Guerrero
@@ -65,7 +65,7 @@ export default function Home() {
               <h3 className="text-center text-4xl font-light text-white">
                 <Typewriter
                   options={{
-                    strings: ["Desarollador Web Front-End 😎"],
+                    strings: ["{ Desarrollador Front-End 😎 }"],
                     autoStart: true,
                     pauseFor: 2000,
                     loop: true,
