@@ -9,6 +9,7 @@ const Layout = ({children , title, description}) => {
     <Head>
         <title>{`S.Guerrero | ${title}`}</title>
         <meta name="description" content={description} />
+        <link rel="icon" href="/r2d2icon.ico" />
     </Head>
     <Navbar />
     {children}

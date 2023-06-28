@@ -20,11 +20,8 @@ const About = () => {
         <br />
         <p>
           Como desarrollador cuento con experiencia
-          en React y su ecosistema, me gustaría destacar que poseo habilidades
-          técnicas sólidas en la construcción de interfaces de usuario
-          utilizando React, React Router, Nextjs, Axios y otras bibliotecas
-          relevantes. También tengo experiencia en tomar decisiones de
-          arquitectura y en estructurar aplicaciones de manera efectiva.
+          en React y su ecosistema, me gustaría destacar que poseo conocimientos en bases de datos relacionales y no relacionales. He trabajado con frameworks como Nextjs, node y otras bibliotecas
+          relevantes. También tengo experiencia en docker y metodologia scrum.
         </p>
       </article>
       <br />
