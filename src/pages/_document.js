@@ -14,7 +14,7 @@ export default function Document() {
         
       </Head>
 
-      <body className="bg-gradient-to-r from-[#030024] via-[#020114] to-[#010011]">
+      <body className="bg-[#0D1117]">
         <Main />
         <NextScript />
 

@@ -40,7 +40,7 @@ const Skills = () => {
         <div className="grid grid-cols-3 text-center lg:mx-[320px]">
           <div className="mt-5">
             <p className="text-2xl font-extrabold">Lenguajes</p>
-            <ol className="font-light p-3 text-xl">
+            <ol className="font-light p-3 text-xl text-[#A3B3BC]">
               <li>HTML5</li>
               <li>CSS3</li>
               <li>JavaScript</li>
@@ -51,7 +51,7 @@ const Skills = () => {
 
           <div className="mt-5">
             <p className="text-2xl font-extrabold">Frameworks</p>
-            <ol className="font-light p-3 text-xl">
+            <ol className="font-light p-3 text-xl text-[#A3B3BC]">
               <li>React</li>
               <li>NodeJS</li>
               <li>NextJS</li>
@@ -61,7 +61,7 @@ const Skills = () => {
 
           <div className="mt-5">
             <p className="text-2xl font-extrabold">Otros</p>
-            <ol className="font-light p-3 text-xl">
+            <ol className="font-light p-3 text-xl text-[#A3B3BC]">
               <li>Git / Github</li>
               <li>WordPress</li>
             </ol>
@@ -73,7 +73,7 @@ const Skills = () => {
       <h3 className="text-white text-center font-bold mt-[50px] mb-5 uppercase text-[30px]">
           Habilidades<span className="text-transparent bg-clip-text bg-gradient-to-r from-[#FF512F] via-[#F09819] to-[#FF512F] font-extrabold"> Blandas</span> 🧠
         </h3>
-      <div className="text-white m-10 mx-[70px] text-md bg-[#1E293B] rounded-lg p-7 mb-[100px] text-xl sm:mx-[50px] lg:mx-[200px]">
+      <div className="text-[#A3B3BC] m-10 mx-[70px] text-md bg-[#1E293B] rounded-lg p-7 mb-[100px] text-xl sm:mx-[50px] lg:mx-[200px]">
         <p>
           <span className="font-bold text-md">Comunicacion efectiva:</span> Tengo la capacidad
           de comunicarme de manera efectiva con compañeros de trabajo, clientes

@@ -13,25 +13,22 @@ const Contacto = () => {
 
       <form className="grid justify-center mb-10 text-xl">
         
-        <input className="p-1 rounded-xl w-[500px]" type="text" name="name" placeholder=" Ingresa tu Nombre"   />
+        <input className="bg-gray-50 py-3 border border-gray-300 rounded-xl w-[500px] focus:outline-[#FC7903] text-gray-900 block p-3" type="text" name="name" placeholder=" Ingresa tu Nombre"   />
         
 
         <br />
-        <input className="p-1 rounded-xl w-[500px]" type="text" name="correo" placeholder=" Ingresa tu Correo"/>
+        <input className="bg-gray-50 py-3 border border-gray-300 rounded-xl w-[500px] focus:ring-amber-500 focus:outline-[#FC7903] text-gray-900 block p-3" type="text" name="correo" placeholder=" Ingresa tu Correo"/>
        
 
         <br />
-        <textarea placeholder=" Hablemos" name="mensaje" className="w-[500px] h-[150px] rounded-lg" maxLength="325"  style={{ resize: 'none' }}/>
+        <textarea placeholder=" Hablemos" name="mensaje" className="bg-gray-50 py-3 border border-gray-300 w-[500px] h-[150px] rounded-lg focus:outline-[#FC7903] text-gray-900 block p-3" maxLength="325"  style={{ resize: 'none' }}/>
        
         <br />
-        <button type="submit" className="text-white p-1 font-bold border-none rounded-lg bg-orange-600 text-lg uppercase hover:bg-orange-700">
+        <button type="submit" className="text-white py-4 font-semibold border-none rounded-[50px] bg-gradient-to-r from-[#FF512F] via-[#F09819] to-[#FF512F] text-lg uppercase">
           Enviar
         </button>
       </form>
     </div>
-    {/* <div className="sm:flex justify-center">
-    <Image src={r2d2Gift} alt="r2d2" width={450} height={450} />
-    </div> */}
     </section>
   );
 };

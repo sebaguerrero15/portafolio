@@ -86,7 +86,7 @@ export default function Home() {
           smooth={true}
           duration={1500}
           offset={-200}
-          className="text-[#FC7903] cursor-pointer flex justify-center m-8 text-[70px] hover:text-white hover:bg-[#05071b]"
+          className="text-[#FC7903] cursor-pointer flex justify-center m-8 text-[70px] hover:text-white hover:bg-[#131821]"
         >
           <MdOutlineKeyboardDoubleArrowUp />
         </Scroll>

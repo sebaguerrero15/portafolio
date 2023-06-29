@@ -7,32 +7,30 @@ import { AiFillHome } from "@react-icons/all-files/ai/AiFillHome";
 import { MdEmail } from "@react-icons/all-files/md/MdEmail";
 import { AiFillThunderbolt } from "@react-icons/all-files/ai/AiFillThunderbolt";
 import { BiMenu } from "@react-icons/all-files/bi/BiMenu";
+import { GiCrossedSwords } from "@react-icons//all-files/gi/GiCrossedSwords";
 
 const Navbar = () => {
-  const [isActive, setIsActive] = useState(false);
+  
   const [open, setOpen] = useState(false);
 
-  useEffect(() => {
-    window.addEventListener("scroll", () => {
-      window.scrollY > 70 ? setIsActive(true) : setIsActive(false);
-    });
-  }, []);
+
 
   return (
     <header className="w-full fixed top-0 right-0">
       <nav
-        className="bg-[#02030c] shadow-lg md:flex justify-end md:py-2 sm:py-8 md:px-10 px-7"
+        className="bg-[#02030c] shadow-md lg:flex justify-end lg:py-2 sm:py-8 lg:px-10 px-7"
       >
-      <div className='font-bold text-2xl cursor-pointer flex md:absolute md:left-8 text-gray-800 m-0'>
-        <span className='text-3xl text-indigo-600'>
-        <ion-icon name="logo-ionic"></ion-icon>
-        </span>
-        S.Guerrero
+      <div className='font-bold text-2xl cursor-pointer sm:flex items-center gap-2 lg:absolute lg:left-8 text-gray-800 m-0'>
+        <Link href="/" className='text-2xl text-white'>
+        S.Guerrero 
+        </Link>
+        <span><GiCrossedSwords className="text-white"/></span>
+        
       </div>
 
         <div
           onClick={()=>setOpen(!open)}
-          className="text-3xl absolute right-8 top-6 cursor-pointer md:hidden"
+          className="text-3xl absolute right-8 top-6 cursor-pointer lg:hidden"
         >
           <BiMenu
             className="text-[#FC7903] text-[60px]"
@@ -40,7 +38,7 @@ const Navbar = () => {
         </div>
 
         <ul
-          className={`md:flex md:items-center md:pb-0 pb-3 md:justify-end absolute md:static md:z-auto z-[-1] left-0 w-full md:w-auto md:pl-0 pl-9 transition-all duration-500 ease-in ${open ? "bg-[#02030c] top-[90px]" : "top-[-490px]"
+          className={`lg:flex lg:items-center lg:pb-0 pb-3 lg:justify-end absolute lg:static lg:z-auto z-[-1] left-0 w-full lg:w-auto lg:pl-0 pl-9 transition-all duration-500 ease-in ${open ? "bg-[#02030c] top-[90px]" : "top-[-490px]"
           }`}
         >
           <li>

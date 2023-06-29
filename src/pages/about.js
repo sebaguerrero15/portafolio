@@ -1,6 +1,7 @@
 import Link from "next/link";
 import { FaFilePdf } from "react-icons/fa";
 
+
 const About = () => {
   return (
     <section id="about" className="p-2 mt-[350px] xl:mx-[200px] sm:mx-[30px]">
@@ -11,7 +12,7 @@ const About = () => {
         de Mi
       </h2>
       
-      <article className="text-white text-xl text-justify p-4 rounded-md bg-[#1E293B]">
+      <article className="text-[#A3B3BC] text-xl text-justify p-4 rounded-[30px] hover:bg-[#1E293B]">
         <p>
           De profesión Ingeniero <span className="font-bold">Informático,</span> chileno titulado el año
           2015. Tengo un perro llamado Luke 🐶 fanático de la tecnología, las series y los juegos
@@ -26,10 +27,10 @@ const About = () => {
       </article>
       <br />
 
-      <article className="text-white text-xl text-justify p-4 rounded-md bg-[#1E293B]">
-        <h2 className="uppercase font-extrabold">Experiencia</h2>
+      <article className="text-[#A3B3BC] text-xl text-justify p-4 rounded-[30px] hover:bg-[#1E293B]">
+        <h2 className="uppercase font-extrabold text-white">Experiencia</h2>
         <div className="mt-4">
-          <h3 className="font-bold">Desarrollador Frontend:</h3>
+          <h3 className="font-bold text-white">Desarrollador Frontend:</h3>
           <p>
             Tengo experiencia trabajando con distintos frameworks como NextJS
             13, nodejs y biblioteca React
@@ -38,7 +39,7 @@ const About = () => {
         
 
         <div className="mt-4">
-          <h3 className="font-bold">Administrador Informático:</h3>
+          <h3 className="font-bold text-white">Administrador Informático:</h3>
           <p>
             Encargado de Redes, Mantención y Creación de sitios webs
             realizadas con Wordpress y php para Escuelas Municipales.
@@ -47,7 +48,7 @@ const About = () => {
         </div>
 
         <div className="mt-4">
-          <h3 className="font-bold">Analista QA:</h3>
+          <h3 className="font-bold text-white">Analista QA:</h3>
           <p>
             Responsable de revisar código de acuerdo con las buenas prácticas de
             desarrollo de los proyectos en base a las políticas de desarrollo
@@ -57,20 +58,19 @@ const About = () => {
       </article>
 
       <br />
-      <article className="text-white text-center">
-        <p className="font-semibold text-xl flex justify-center sm:mb-4">
-          CURRICULUM ADJUNTO
-        </p>
-
+      <article className="text-white text-center mt-5 flex items-center justify-center gap-2">
         <Link
           href="/CV_SEBASTIAN_GUERRERO.pdf"
           target="_blank"
           download="CV_SEBASTIAN_GUERRERO.pdf"
-          className="text-[#FC7903] text-lg font-bold uppercase flex justify-center items-center gap-2"
-        >
-          Descargar CV en PDF <FaFilePdf className="text-white" />
+          className="text-white p-4 font-semibold border-none rounded-[50px] bg-gradient-to-r from-[#FF512F] via-[#F09819] to-[#FF512F] text-lg text-center uppercase">
+          Descargar CV en PDF
         </Link>
+        <div>
+          <FaFilePdf  className="text-white text-4xl"/>
+        </div>
       </article>
+
     </section>
   );
 };
